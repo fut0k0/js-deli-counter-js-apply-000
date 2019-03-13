@@ -1,4 +1,4 @@
-function takeANumber(line, name) {
+function takeANumberZ(line, name) {
   line.push(name);
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
@@ -24,3 +24,14 @@ function currentLine(line) {
     return `The line is currently:${output}`;
   }
 }
+
+var tn = 0;
+
+function takeANumber(line) {
+  tn++;
+  console.log(tn);
+  line.push(tn);
+  console.log(line);
+  return `Welcome, Ticket Number ${tn}. You are number ${line.length} in line.`;
+}
+
